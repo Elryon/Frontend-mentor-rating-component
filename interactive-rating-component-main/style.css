@@ -1,0 +1,157 @@
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+section{
+    background: linear-gradient(0deg, rgba(18,20,23,1) 49%, rgba(39,48,58,1) 100%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 0;
+    margin-top: 15px;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin: 5px;
+}
+
+
+/* début de la première fenêtre */
+.question{
+    height: 325px;
+    width: 350px;
+    padding: 5px;
+    padding-top: 50px;
+    gap: 25px;
+}
+
+.textQuestion{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 10%;
+    margin-left: 10%;
+    gap: 5px;
+}
+
+.textQuestionImg{
+    background-color: hsla(216, 12%, 54%, 20%);
+    border-radius: 50%/50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.number{
+    color : hsl(217, 12%, 63%);
+    border-radius: 50%/50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, 20%);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.number:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.button{
+    grid-column: 1/6;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    border-radius: 80px;
+    height: 50px;
+}
+
+.button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+/* début de la deuxième fenêtre */
+.popThanks{
+    justify-content: space-around;
+    height: 375px;
+    width: 350px;
+    display: none;
+}
+
+.popBody{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+
+.popThanks p{
+    text-align: center;
+}
+
+.scoreMsg{
+    background-color: hsla(216, 12%, 54%, 20%);
+    border-radius: 80px;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.scoreMsg p{
+    color: hsla(34, 97%, 53%, 0.871);    
+}
+
+
+/* élémentes changeants avec js */
+.numberClicked{
+    background-color:hsl(217, 12%, 63%);
+    color: white;
+    border-radius: 50%/50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.active {
+    display: flex ;
+}
+
+.inactive{
+    display: none;
+}
